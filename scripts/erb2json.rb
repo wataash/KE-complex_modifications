@@ -203,7 +203,7 @@ def frontmost_application(type, app_aliases)
       bundle_identifiers.concat(vi_bundle_identifiers)
       bundle_identifiers.concat(virtual_machine_bundle_identifiers)
       bundle_identifiers.concat(x11_bundle_identifiers)
-      bundle_identifiers << '^com\\.microsoft\\.VSCode$'
+      # bundle_identifiers << '^com\\.microsoft\\.VSCode$'
 
     when 'finder'
       bundle_identifiers.concat(finder_bundle_identifiers)
