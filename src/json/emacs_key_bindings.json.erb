@@ -9,7 +9,7 @@
                 <%# -------------------------------------------------- %>
                 {
                     "type": "basic",
-                    "from": <%= from("c", ["control"], ["caps_lock"]) %>,
+                    "from": <%= from("c", ["left_control"], ["any"]) %>,
                     "to": <%= to([["q", ["left_command"]]]) %>,
                     "conditions": [ { "type": "variable_if", "name": "C-x", "value": 1 } ]
                 },
@@ -19,7 +19,7 @@
                 <%# -------------------------------------------------- %>
                 {
                     "type": "basic",
-                    "from": <%= from("f", ["control"], ["caps_lock"]) %>,
+                    "from": <%= from("f", ["left_control"], ["any"]) %>,
                     "to": <%= to([["o", ["left_command"]]]) %>,
                     "conditions": [ { "type": "variable_if", "name": "C-x", "value": 1 } ]
                 },
@@ -29,7 +29,7 @@
                 <%# -------------------------------------------------- %>
                 {
                     "type": "basic",
-                    "from": <%= from("s", ["control"], ["caps_lock"]) %>,
+                    "from": <%= from("s", ["left_control"], ["any"]) %>,
                     "to": <%= to([["s", ["left_command"]]]) %>,
                     "conditions": [ { "type": "variable_if", "name": "C-x", "value": 1 } ]
                 },
@@ -55,7 +55,7 @@
                 <%# -------------------------------------------------- %>
                 {
                     "type": "basic",
-                    "from": <%= from("x", ["control"], ["caps_lock"]) %>,
+                    "from": <%= from("x", ["left_control"], ["any"]) %>,
                     "to": [
                         {
                             "set_variable": {
@@ -87,29 +87,49 @@
             ]
         },
         {
-            "description": "Emacs key bindings [control+keys] (rev 9)",
+            "description": "Emacs key bindings [left_control+keys] (rev 9)",
             "manipulators": [
                 {
                     "type": "basic",
-                    "from": <%= from("d", ["control"], ["caps_lock", "option"]) %>,
+                    "from": <%= from("d", ["left_control"], ["any"]) %>,
                     "to": <%= to([["delete_forward"]]) %>,
                     "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
                 },
                 {
                     "type": "basic",
-                    "from": <%= from("h", ["control"], ["caps_lock", "option"]) %>,
+                    "from": <%= from("h", ["left_control"], ["any"]) %>,
                     "to": <%= to([["delete_or_backspace"]]) %>,
                     "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
                 },
                 {
+                    "description": "Change control+u to delete-to-beginning-of-line",
                     "type": "basic",
-                    "from": <%= from("i", ["control"], ["caps_lock", "shift"]) %>,
+                    "from": <%= from("u", ["left_control"], ["any"]) %>,
+                    "to": <%= to([["a", ["left_control", "left_shift"]], ["delete_or_backspace"], ["vk_none"]]) %>,
+                    "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
+                },
+                {
+                    "description": "Change control+w to option+delete",
+                    "type": "basic",
+                    "from": <%= from("w", ["left_control"], ["any"]) %>,
+                    "to": <%= to([["delete_or_backspace", ["left_option"]]]) %>,
+                    "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("i", ["left_control"], ["any"]) %>,
                     "to": <%= to([["tab"]]) %>,
                     "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
                 },
                 {
                     "type": "basic",
-                    "from": <%= from("open_bracket", ["control"], ["caps_lock"]) %>,
+                    "from": <%= from("g", ["left_control"], ["any"]) %>,
+                    "to": <%= to([["escape"]]) %>,
+                    "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("open_bracket", ["left_control"], ["any"]) %>,
                     "to": <%= to([["escape"]]) %>,
                     "conditions": [
                         {
@@ -123,7 +143,7 @@
                 },
                 {
                     "type": "basic",
-                    "from": <%= from("close_bracket", ["control"], ["caps_lock"]) %>,
+                    "from": <%= from("close_bracket", ["left_control"], ["any"]) %>,
                     "to": <%= to([["escape"]]) %>,
                     "conditions": [
                         {
@@ -135,90 +155,96 @@
                     ]
                 },
                 {
+                    "description": "Change control+j to return",
                     "type": "basic",
-                    "from": <%= from("m", ["control"], ["caps_lock", "shift", "option"]) %>,
+                    "from": <%= from("j", ["left_control"], ["any"]) %>,
                     "to": <%= to([["return_or_enter"]]) %>
                 },
                 {
                     "type": "basic",
-                    "from": <%= from("b", ["control"], ["caps_lock", "shift", "option"]) %>,
+                    "from": <%= from("m", ["left_control"], ["any"]) %>,
+                    "to": <%= to([["return_or_enter"]]) %>
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("b", ["left_control"], ["any"]) %>,
                     "to": <%= to([["left_arrow"]]) %>,
                     "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
                 },
                 {
                     "type": "basic",
-                    "from": <%= from("f", ["control"], ["caps_lock", "shift", "option"]) %>,
+                    "from": <%= from("f", ["left_control"], ["any"]) %>,
                     "to": <%= to([["right_arrow"]]) %>,
                     "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
                 },
                 {
                     "type": "basic",
-                    "from": <%= from("n", ["control"], ["caps_lock", "shift", "option"]) %>,
+                    "from": <%= from("n", ["left_control"], ["any"]) %>,
                     "to": <%= to([["down_arrow"]]) %>,
                     "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
                 },
                 {
                     "type": "basic",
-                    "from": <%= from("p", ["control"], ["caps_lock", "shift", "option"]) %>,
+                    "from": <%= from("p", ["left_control"], ["any"]) %>,
                     "to": <%= to([["up_arrow"]]) %>,
                     "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
                 },
                 {
                     "type": "basic",
-                    "from": <%= from("v", ["control"], ["caps_lock", "shift"]) %>,
+                    "from": <%= from("v", ["left_control"], ["any"]) %>,
                     "to": <%= to([["page_down"]]) %>,
                     "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
                 },
                 {
                     "type": "basic",
-                    "from": <%= from("a", ["control"], ["caps_lock", "shift"]) %>,
+                    "from": <%= from("a", ["left_control"], ["any"]) %>,
                     "to": <%= to([["home"]]) %>,
                     "conditions": [ <%= frontmost_application_if("microsoft_office") %> ]
                 },
                 {
                     "type": "basic",
-                    "from": <%= from("e", ["control"], ["caps_lock", "shift"]) %>,
+                    "from": <%= from("e", ["left_control"], ["any"]) %>,
                     "to": <%= to([["end"]]) %>,
                     "conditions": [ <%= frontmost_application_if("microsoft_office") %> ]
                 },
                 {
                     "type": "basic",
-                    "from": <%= from("a", ["control"], ["caps_lock", "shift"]) %>,
+                    "from": <%= from("a", ["left_control"], ["any"]) %>,
                     "to": <%= to([["left_arrow", ["left_command"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+                    "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
                 },
                 {
                     "type": "basic",
-                    "from": <%= from("e", ["control"], ["caps_lock", "shift"]) %>,
+                    "from": <%= from("e", ["left_control"], ["any"]) %>,
                     "to": <%= to([["right_arrow", ["left_command"]]]) %>,
-                    "conditions": [ <%= frontmost_application_if("eclipse") %> ]
+                    "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
                 }
             ]
         },
         {
-            "description": "Emacs key bindings [option+keys] (rev 4)",
+            "description": "Emacs key bindings [left_option+keys] (rev 4)",
             "manipulators": [
                 {
                     "type": "basic",
-                    "from": <%= from("v", ["option"], ["caps_lock", "shift"]) %>,
+                    "from": <%= from("v", ["left_option"], ["any"]) %>,
                     "to": <%= to([["page_up"]]) %>,
                     "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
                 },
                 {
                     "type": "basic",
-                    "from": <%= from("b", ["option"], ["caps_lock", "shift"]) %>,
+                    "from": <%= from("b", ["left_option"], ["any"]) %>,
                     "to": <%= to([["left_arrow", ["left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
                 },
                 {
                     "type": "basic",
-                    "from": <%= from("f", ["option"], ["caps_lock", "shift"]) %>,
+                    "from": <%= from("f", ["left_option"], ["any"]) %>,
                     "to": <%= to([["right_arrow", ["left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
                 },
                 {
                     "type": "basic",
-                    "from": <%= from("d", ["option"], ["caps_lock"]) %>,
+                    "from": <%= from("d", ["left_option"], ["any"]) %>,
                     "to": <%= to([["delete_forward", ["left_option"]]]) %>,
                     "conditions": [ <%= frontmost_application_unless("emacs_key_bindings_exception") %> ]
                 }
