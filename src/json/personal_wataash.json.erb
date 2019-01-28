@@ -1,0 +1,253 @@
+<%# TODO: erb -> rb %>
+
+<% if false %>
+<% end %>
+<%#
+comment
+%>
+
+{
+  "title": "Personal rules (@wataash)",
+  "rules": [
+
+    <%# ------------------------------------------------------------- %>
+
+    {
+      "description": "wataash: TouchCursor Extended Mode [based on @jeebak, use right_command]",
+      "manipulators": [
+
+        <%# 14 %>
+        {
+          "type": "basic",
+          "from": <%= from("right_command", [], ["any"]) %>,
+          "to": [{ "set_variable": { "name": "touchcursor_extended_mode", "value": 1 } }],
+          "to_if_alone": <%= to([["japanese_kana"]]) %>,  <%# duplicate: japanese.json %>
+          "to_after_key_up": [{ "set_variable": { "name": "touchcursor_extended_mode", "value": 0 } }]
+        },
+
+        <%# 29 %>
+        {
+          "type": "basic",
+          "from": <%= from("j", [], ["any"]) %>,
+          "to": <%= to([["left_arrow"]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        {
+          "type": "basic",
+          "from": <%= from("k", [], ["any"]) %>,
+          "to": <%= to([["down_arrow"]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        {
+          "type": "basic",
+          "from": <%= from("i", [], ["any"]) %>,
+          "to": <%= to([["up_arrow"]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        <%# 62 %>
+        {
+          "type": "basic",
+          "from": <%= from("l", [], ["any"]) %>,
+          "to": <%= to([["right_arrow"]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        <%# 83 %>
+        {
+          "type": "basic",
+          "from": <%= from("u", [], ["any"]) %>,
+          "to": <%= to([["home"]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        <%# 91 %>
+        {
+          "type": "basic",
+          "from": <%= from("o", [], ["any"]) %>,
+          "to": <%= to([["end"]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        <%# 99 unused %>
+        {
+          "type": "basic",
+          "from": <%= from("m", [], ["any"]) %>,
+          "to": <%= to([["delete_forward"]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        <%# 116 unused %>
+        {
+          "type": "basic",
+          "from": <%= from("p", [], ["any"]) %>,
+          "to": <%= to([["delete_or_backspace"]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        <%# 137 %>
+        {
+          "type": "basic",
+          "from": <%= from("h", [], ["any"]) %>,
+          "to": <%= to([["page_up"]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        <%# 145 %>
+        {
+          "type": "basic",
+          "from": <%= from("n", [], ["any"]) %>,
+          "to": <%= to([["page_down"]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        <%# 349 %>
+        {
+          "type": "basic",
+          "from": <%= from("1", [], ["any"]) %>,
+          "to": <%= to([["f1", []]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        {
+          "type": "basic",
+          "from": <%= from("2", [], ["any"]) %>,
+          "to": <%= to([["f2", []]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        {
+          "type": "basic",
+          "from": <%= from("3", [], ["any"]) %>,
+          "to": <%= to([["f3", []]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        {
+          "type": "basic",
+          "from": <%= from("4", [], ["any"]) %>,
+          "to": <%= to([["f4", []]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        {
+          "type": "basic",
+          "from": <%= from("5", [], ["any"]) %>,
+          "to": <%= to([["f5", []]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        {
+          "type": "basic",
+          "from": <%= from("6", [], ["any"]) %>,
+          "to": <%= to([["f6", []]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        {
+          "type": "basic",
+          "from": <%= from("7", [], ["any"]) %>,
+          "to": <%= to([["f7", []]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        {
+          "type": "basic",
+          "from": <%= from("8", [], ["any"]) %>,
+          "to": <%= to([["f8", []]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        {
+          "type": "basic",
+          "from": <%= from("9", [], ["any"]) %>,
+          "to": <%= to([["f9", []]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        {
+          "type": "basic",
+          "from": <%= from("0", [], ["any"]) %>,
+          "to": <%= to([["f10", []]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        {
+          "type": "basic",
+          "from": <%= from("hyphen", [], ["any"]) %>,
+          "to": <%= to([["f11", []]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        <%# 437 %>
+        {
+          "type": "basic",
+          "from": <%= from("equal_sign", [], ["any"]) %>,
+          "to": <%= to([["f12", []]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+
+        <%# 500 %>
+        <%# -------------------------------------------------- %>
+        <%# Media keys %>
+        <%# Space-⎋, and Space-` to rewind %>
+        <%# Space-⌫  to fastforward %>
+        <%# Space-y to mute %>
+        <%# Space-[ to volume_decrement %>
+        <%# Space-] to volume_increment %>
+        <%# Space-\ to play_or_pause %>
+        <%# -------------------------------------------------- %>
+        {
+          "type": "basic",
+          "from": <%= from("escape", [], ["caps_lock"]) %>,
+          "to": <%= to([["rewind"]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+        {
+          "type": "basic",
+          "from": <%= from("grave_accent_and_tilde", [], ["caps_lock"]) %>,
+          "to": <%= to([["rewind"]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+        {
+          "type": "basic",
+          "from": <%= from("delete_or_backspace", [], ["caps_lock"]) %>,
+          "to": <%= to([["fastforward"]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+        {
+          "type": "basic",
+          "from": <%= from("y", [], ["caps_lock"]) %>,
+          "to": <%= to([["mute"]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+        {
+          "type": "basic",
+          "from": <%= from("open_bracket", [], ["caps_lock"]) %>,
+          "to": <%= to([["volume_decrement"]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+        {
+          "type": "basic",
+          "from": <%= from("close_bracket", [], ["caps_lock"]) %>,
+          "to": <%= to([["volume_increment"]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        },
+        {
+          "type": "basic",
+          "from": <%= from("backslash", [], ["caps_lock"]) %>,
+          "to": <%= to([["play_or_pause"]]) %>,
+          "conditions": [{ "type": "variable_if", "name": "touchcursor_extended_mode", "value": 1 }]
+        }
+
+        <%# end: TouchCursor %>
+
+      ]
+    }
+
+    <%# ------------------------------------------------------------- %>
+
+  ]
+}
