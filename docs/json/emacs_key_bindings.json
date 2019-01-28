@@ -10,10 +10,10 @@
             "key_code": "c",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock"
+                "any"
               ]
             }
           },
@@ -39,10 +39,10 @@
             "key_code": "f",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock"
+                "any"
               ]
             }
           },
@@ -68,10 +68,10 @@
             "key_code": "s",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock"
+                "any"
               ]
             }
           },
@@ -115,10 +115,10 @@
             "key_code": "x",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock"
+                "any"
               ]
             }
           },
@@ -187,8 +187,7 @@
                 "^org\\.x\\.X11$",
                 "^com\\.apple\\.x11$",
                 "^org\\.macosforge\\.xquartz\\.X11$",
-                "^org\\.macports\\.X11$",
-                "^com\\.microsoft\\.VSCode$"
+                "^org\\.macports\\.X11$"
               ]
             }
           ]
@@ -196,7 +195,7 @@
       ]
     },
     {
-      "description": "Emacs key bindings [control+keys] (rev 9)",
+      "description": "Emacs key bindings [left_control+keys] (rev 9)",
       "manipulators": [
         {
           "type": "basic",
@@ -204,11 +203,10 @@
             "key_code": "d",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock",
-                "option"
+                "any"
               ]
             }
           },
@@ -256,8 +254,7 @@
                 "^org\\.x\\.X11$",
                 "^com\\.apple\\.x11$",
                 "^org\\.macosforge\\.xquartz\\.X11$",
-                "^org\\.macports\\.X11$",
-                "^com\\.microsoft\\.VSCode$"
+                "^org\\.macports\\.X11$"
               ]
             }
           ]
@@ -268,11 +265,10 @@
             "key_code": "h",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock",
-                "option"
+                "any"
               ]
             }
           },
@@ -320,8 +316,146 @@
                 "^org\\.x\\.X11$",
                 "^com\\.apple\\.x11$",
                 "^org\\.macosforge\\.xquartz\\.X11$",
-                "^org\\.macports\\.X11$",
-                "^com\\.microsoft\\.VSCode$"
+                "^org\\.macports\\.X11$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Change control+u to delete-to-beginning-of-line",
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_control",
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "delete_or_backspace"
+            },
+            {
+              "key_code": "vk_none"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org\\.gnu\\.Emacs$",
+                "^org\\.gnu\\.AquamacsEmacs$",
+                "^org\\.gnu\\.Aquamacs$",
+                "^org\\.pqrs\\.unknownapp.conkeror$",
+                "^com\\.microsoft\\.rdc$",
+                "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.osx\\.beta$",
+                "^net\\.sf\\.cord$",
+                "^com\\.thinomenon\\.RemoteDesktopConnection$",
+                "^com\\.itap-mobile\\.qmote$",
+                "^com\\.nulana\\.remotixmac$",
+                "^com\\.p5sys\\.jump\\.mac\\.viewer$",
+                "^com\\.p5sys\\.jump\\.mac\\.viewer\\.web$",
+                "^com\\.teamviewer\\.TeamViewer$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.2X\\.Client\\.Mac$",
+                "^com\\.apple\\.Terminal$",
+                "^com\\.googlecode\\.iterm2$",
+                "^co\\.zeit\\.hyperterm$",
+                "^co\\.zeit\\.hyper$",
+                "^io\\.alacritty$",
+                "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\.",
+                "^org\\.x\\.X11$",
+                "^com\\.apple\\.x11$",
+                "^org\\.macosforge\\.xquartz\\.X11$",
+                "^org\\.macports\\.X11$"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "Change control+w to option+delete",
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org\\.gnu\\.Emacs$",
+                "^org\\.gnu\\.AquamacsEmacs$",
+                "^org\\.gnu\\.Aquamacs$",
+                "^org\\.pqrs\\.unknownapp.conkeror$",
+                "^com\\.microsoft\\.rdc$",
+                "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.osx\\.beta$",
+                "^net\\.sf\\.cord$",
+                "^com\\.thinomenon\\.RemoteDesktopConnection$",
+                "^com\\.itap-mobile\\.qmote$",
+                "^com\\.nulana\\.remotixmac$",
+                "^com\\.p5sys\\.jump\\.mac\\.viewer$",
+                "^com\\.p5sys\\.jump\\.mac\\.viewer\\.web$",
+                "^com\\.teamviewer\\.TeamViewer$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.2X\\.Client\\.Mac$",
+                "^com\\.apple\\.Terminal$",
+                "^com\\.googlecode\\.iterm2$",
+                "^co\\.zeit\\.hyperterm$",
+                "^co\\.zeit\\.hyper$",
+                "^io\\.alacritty$",
+                "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\.",
+                "^org\\.x\\.X11$",
+                "^com\\.apple\\.x11$",
+                "^org\\.macosforge\\.xquartz\\.X11$",
+                "^org\\.macports\\.X11$"
               ]
             }
           ]
@@ -332,11 +466,10 @@
             "key_code": "i",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock",
-                "shift"
+                "any"
               ]
             }
           },
@@ -384,8 +517,69 @@
                 "^org\\.x\\.X11$",
                 "^com\\.apple\\.x11$",
                 "^org\\.macosforge\\.xquartz\\.X11$",
-                "^org\\.macports\\.X11$",
-                "^com\\.microsoft\\.VSCode$"
+                "^org\\.macports\\.X11$"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "escape"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^org\\.gnu\\.Emacs$",
+                "^org\\.gnu\\.AquamacsEmacs$",
+                "^org\\.gnu\\.Aquamacs$",
+                "^org\\.pqrs\\.unknownapp.conkeror$",
+                "^com\\.microsoft\\.rdc$",
+                "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.osx\\.beta$",
+                "^net\\.sf\\.cord$",
+                "^com\\.thinomenon\\.RemoteDesktopConnection$",
+                "^com\\.itap-mobile\\.qmote$",
+                "^com\\.nulana\\.remotixmac$",
+                "^com\\.p5sys\\.jump\\.mac\\.viewer$",
+                "^com\\.p5sys\\.jump\\.mac\\.viewer\\.web$",
+                "^com\\.teamviewer\\.TeamViewer$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.2X\\.Client\\.Mac$",
+                "^com\\.apple\\.Terminal$",
+                "^com\\.googlecode\\.iterm2$",
+                "^co\\.zeit\\.hyperterm$",
+                "^co\\.zeit\\.hyper$",
+                "^io\\.alacritty$",
+                "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\.",
+                "^org\\.x\\.X11$",
+                "^com\\.apple\\.x11$",
+                "^org\\.macosforge\\.xquartz\\.X11$",
+                "^org\\.macports\\.X11$"
               ]
             }
           ]
@@ -396,10 +590,10 @@
             "key_code": "open_bracket",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock"
+                "any"
               ]
             }
           },
@@ -424,10 +618,10 @@
             "key_code": "close_bracket",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock"
+                "any"
               ]
             }
           },
@@ -446,17 +640,35 @@
           ]
         },
         {
+          "description": "Change control+j to return",
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter"
+            }
+          ]
+        },
+        {
           "type": "basic",
           "from": {
             "key_code": "m",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock",
-                "shift",
-                "option"
+                "any"
               ]
             }
           },
@@ -472,12 +684,10 @@
             "key_code": "b",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock",
-                "shift",
-                "option"
+                "any"
               ]
             }
           },
@@ -525,8 +735,7 @@
                 "^org\\.x\\.X11$",
                 "^com\\.apple\\.x11$",
                 "^org\\.macosforge\\.xquartz\\.X11$",
-                "^org\\.macports\\.X11$",
-                "^com\\.microsoft\\.VSCode$"
+                "^org\\.macports\\.X11$"
               ]
             }
           ]
@@ -537,12 +746,10 @@
             "key_code": "f",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock",
-                "shift",
-                "option"
+                "any"
               ]
             }
           },
@@ -590,8 +797,7 @@
                 "^org\\.x\\.X11$",
                 "^com\\.apple\\.x11$",
                 "^org\\.macosforge\\.xquartz\\.X11$",
-                "^org\\.macports\\.X11$",
-                "^com\\.microsoft\\.VSCode$"
+                "^org\\.macports\\.X11$"
               ]
             }
           ]
@@ -602,12 +808,10 @@
             "key_code": "n",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock",
-                "shift",
-                "option"
+                "any"
               ]
             }
           },
@@ -655,8 +859,7 @@
                 "^org\\.x\\.X11$",
                 "^com\\.apple\\.x11$",
                 "^org\\.macosforge\\.xquartz\\.X11$",
-                "^org\\.macports\\.X11$",
-                "^com\\.microsoft\\.VSCode$"
+                "^org\\.macports\\.X11$"
               ]
             }
           ]
@@ -667,12 +870,10 @@
             "key_code": "p",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock",
-                "shift",
-                "option"
+                "any"
               ]
             }
           },
@@ -720,8 +921,7 @@
                 "^org\\.x\\.X11$",
                 "^com\\.apple\\.x11$",
                 "^org\\.macosforge\\.xquartz\\.X11$",
-                "^org\\.macports\\.X11$",
-                "^com\\.microsoft\\.VSCode$"
+                "^org\\.macports\\.X11$"
               ]
             }
           ]
@@ -732,11 +932,10 @@
             "key_code": "v",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock",
-                "shift"
+                "any"
               ]
             }
           },
@@ -784,8 +983,7 @@
                 "^org\\.x\\.X11$",
                 "^com\\.apple\\.x11$",
                 "^org\\.macosforge\\.xquartz\\.X11$",
-                "^org\\.macports\\.X11$",
-                "^com\\.microsoft\\.VSCode$"
+                "^org\\.macports\\.X11$"
               ]
             }
           ]
@@ -796,11 +994,10 @@
             "key_code": "a",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock",
-                "shift"
+                "any"
               ]
             }
           },
@@ -826,11 +1023,10 @@
             "key_code": "e",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock",
-                "shift"
+                "any"
               ]
             }
           },
@@ -856,11 +1052,10 @@
             "key_code": "a",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock",
-                "shift"
+                "any"
               ]
             }
           },
@@ -874,9 +1069,44 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_if",
+              "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "^org\\.eclipse\\.platform\\.ide$"
+                "^org\\.gnu\\.Emacs$",
+                "^org\\.gnu\\.AquamacsEmacs$",
+                "^org\\.gnu\\.Aquamacs$",
+                "^org\\.pqrs\\.unknownapp.conkeror$",
+                "^com\\.microsoft\\.rdc$",
+                "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.osx\\.beta$",
+                "^net\\.sf\\.cord$",
+                "^com\\.thinomenon\\.RemoteDesktopConnection$",
+                "^com\\.itap-mobile\\.qmote$",
+                "^com\\.nulana\\.remotixmac$",
+                "^com\\.p5sys\\.jump\\.mac\\.viewer$",
+                "^com\\.p5sys\\.jump\\.mac\\.viewer\\.web$",
+                "^com\\.teamviewer\\.TeamViewer$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.2X\\.Client\\.Mac$",
+                "^com\\.apple\\.Terminal$",
+                "^com\\.googlecode\\.iterm2$",
+                "^co\\.zeit\\.hyperterm$",
+                "^co\\.zeit\\.hyper$",
+                "^io\\.alacritty$",
+                "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\.",
+                "^org\\.x\\.X11$",
+                "^com\\.apple\\.x11$",
+                "^org\\.macosforge\\.xquartz\\.X11$",
+                "^org\\.macports\\.X11$"
               ]
             }
           ]
@@ -887,11 +1117,10 @@
             "key_code": "e",
             "modifiers": {
               "mandatory": [
-                "control"
+                "left_control"
               ],
               "optional": [
-                "caps_lock",
-                "shift"
+                "any"
               ]
             }
           },
@@ -905,9 +1134,44 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_if",
+              "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "^org\\.eclipse\\.platform\\.ide$"
+                "^org\\.gnu\\.Emacs$",
+                "^org\\.gnu\\.AquamacsEmacs$",
+                "^org\\.gnu\\.Aquamacs$",
+                "^org\\.pqrs\\.unknownapp.conkeror$",
+                "^com\\.microsoft\\.rdc$",
+                "^com\\.microsoft\\.rdc\\.mac$",
+                "^com\\.microsoft\\.rdc\\.osx\\.beta$",
+                "^net\\.sf\\.cord$",
+                "^com\\.thinomenon\\.RemoteDesktopConnection$",
+                "^com\\.itap-mobile\\.qmote$",
+                "^com\\.nulana\\.remotixmac$",
+                "^com\\.p5sys\\.jump\\.mac\\.viewer$",
+                "^com\\.p5sys\\.jump\\.mac\\.viewer\\.web$",
+                "^com\\.teamviewer\\.TeamViewer$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.2X\\.Client\\.Mac$",
+                "^com\\.apple\\.Terminal$",
+                "^com\\.googlecode\\.iterm2$",
+                "^co\\.zeit\\.hyperterm$",
+                "^co\\.zeit\\.hyper$",
+                "^io\\.alacritty$",
+                "^org\\.vim\\.",
+                "^com\\.qvacua\\.VimR$",
+                "^com\\.vmware\\.fusion$",
+                "^com\\.vmware\\.horizon$",
+                "^com\\.vmware\\.view$",
+                "^com\\.parallels\\.desktop$",
+                "^com\\.parallels\\.vm$",
+                "^com\\.parallels\\.desktop\\.console$",
+                "^org\\.virtualbox\\.app\\.VirtualBoxVM$",
+                "^com\\.vmware\\.proxyApp\\.",
+                "^com\\.parallels\\.winapp\\.",
+                "^org\\.x\\.X11$",
+                "^com\\.apple\\.x11$",
+                "^org\\.macosforge\\.xquartz\\.X11$",
+                "^org\\.macports\\.X11$"
               ]
             }
           ]
@@ -915,7 +1179,7 @@
       ]
     },
     {
-      "description": "Emacs key bindings [option+keys] (rev 4)",
+      "description": "Emacs key bindings [left_option+keys] (rev 4)",
       "manipulators": [
         {
           "type": "basic",
@@ -923,11 +1187,10 @@
             "key_code": "v",
             "modifiers": {
               "mandatory": [
-                "option"
+                "left_option"
               ],
               "optional": [
-                "caps_lock",
-                "shift"
+                "any"
               ]
             }
           },
@@ -975,8 +1238,7 @@
                 "^org\\.x\\.X11$",
                 "^com\\.apple\\.x11$",
                 "^org\\.macosforge\\.xquartz\\.X11$",
-                "^org\\.macports\\.X11$",
-                "^com\\.microsoft\\.VSCode$"
+                "^org\\.macports\\.X11$"
               ]
             }
           ]
@@ -987,11 +1249,10 @@
             "key_code": "b",
             "modifiers": {
               "mandatory": [
-                "option"
+                "left_option"
               ],
               "optional": [
-                "caps_lock",
-                "shift"
+                "any"
               ]
             }
           },
@@ -1042,8 +1303,7 @@
                 "^org\\.x\\.X11$",
                 "^com\\.apple\\.x11$",
                 "^org\\.macosforge\\.xquartz\\.X11$",
-                "^org\\.macports\\.X11$",
-                "^com\\.microsoft\\.VSCode$"
+                "^org\\.macports\\.X11$"
               ]
             }
           ]
@@ -1054,11 +1314,10 @@
             "key_code": "f",
             "modifiers": {
               "mandatory": [
-                "option"
+                "left_option"
               ],
               "optional": [
-                "caps_lock",
-                "shift"
+                "any"
               ]
             }
           },
@@ -1109,8 +1368,7 @@
                 "^org\\.x\\.X11$",
                 "^com\\.apple\\.x11$",
                 "^org\\.macosforge\\.xquartz\\.X11$",
-                "^org\\.macports\\.X11$",
-                "^com\\.microsoft\\.VSCode$"
+                "^org\\.macports\\.X11$"
               ]
             }
           ]
@@ -1121,10 +1379,10 @@
             "key_code": "d",
             "modifiers": {
               "mandatory": [
-                "option"
+                "left_option"
               ],
               "optional": [
-                "caps_lock"
+                "any"
               ]
             }
           },
@@ -1175,8 +1433,7 @@
                 "^org\\.x\\.X11$",
                 "^com\\.apple\\.x11$",
                 "^org\\.macosforge\\.xquartz\\.X11$",
-                "^org\\.macports\\.X11$",
-                "^com\\.microsoft\\.VSCode$"
+                "^org\\.macports\\.X11$"
               ]
             }
           ]

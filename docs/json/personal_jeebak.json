@@ -2,15 +2,16 @@
   "title": "Personal rules (@jeebak)",
   "rules": [
     {
-      "description": "TouchCursor Extended Mode [Space as Trigger Key]",
+      "description": "TouchCursor Extended Mode [right_command as Trigger Key]",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "spacebar",
+            "key_code": "right_command",
             "modifiers": {
               "optional": [
-                "caps_lock"
+                "caps_lock",
+                "left_control"
               ]
             }
           },
@@ -24,7 +25,7 @@
           ],
           "to_if_alone": [
             {
-              "key_code": "spacebar"
+              "key_code": "japanese_kana"
             }
           ],
           "to_after_key_up": [
@@ -419,55 +420,6 @@
               "type": "variable_if",
               "name": "touchcursor_extended_mode",
               "value": 1
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_shift",
-            "modifiers": {
-              "optional": [
-                "caps_lock"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "spacebar",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "touchcursor_extended_mode",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "mandatory": [
-                "left_shift"
-              ],
-              "optional": [
-                "caps_lock",
-                "option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "spacebar",
-              "modifiers": [
-                "left_option"
-              ]
             }
           ]
         },
@@ -961,7 +913,7 @@
       ]
     },
     {
-      "description": "TouchCursor Extended Mode [Space-{1-0,-,=} to {F1-F10,F11,F12}]",
+      "description": "TouchCursor Extended Mode [right_command-{1-0,-,=} to {F1-F10,F11,F12}]",
       "manipulators": [
         {
           "type": "basic",
@@ -977,7 +929,7 @@
             {
               "key_code": "f1",
               "modifiers": [
-                "fn"
+
               ]
             }
           ],
@@ -1003,7 +955,7 @@
             {
               "key_code": "f2",
               "modifiers": [
-                "fn"
+
               ]
             }
           ],
@@ -1029,7 +981,7 @@
             {
               "key_code": "f3",
               "modifiers": [
-                "fn"
+
               ]
             }
           ],
@@ -1055,7 +1007,7 @@
             {
               "key_code": "f4",
               "modifiers": [
-                "fn"
+
               ]
             }
           ],
@@ -1081,7 +1033,7 @@
             {
               "key_code": "f5",
               "modifiers": [
-                "fn"
+
               ]
             }
           ],
@@ -1107,7 +1059,7 @@
             {
               "key_code": "f6",
               "modifiers": [
-                "fn"
+
               ]
             }
           ],
@@ -1133,7 +1085,7 @@
             {
               "key_code": "f7",
               "modifiers": [
-                "fn"
+
               ]
             }
           ],
@@ -1159,7 +1111,7 @@
             {
               "key_code": "f8",
               "modifiers": [
-                "fn"
+
               ]
             }
           ],
@@ -1185,7 +1137,7 @@
             {
               "key_code": "f9",
               "modifiers": [
-                "fn"
+
               ]
             }
           ],
@@ -1211,7 +1163,7 @@
             {
               "key_code": "f10",
               "modifiers": [
-                "fn"
+
               ]
             }
           ],
@@ -1237,7 +1189,7 @@
             {
               "key_code": "f11",
               "modifiers": [
-                "fn"
+
               ]
             }
           ],
@@ -1263,7 +1215,7 @@
             {
               "key_code": "f12",
               "modifiers": [
-                "fn"
+
               ]
             }
           ],
