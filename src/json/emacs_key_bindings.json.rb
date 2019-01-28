@@ -420,4 +420,6 @@ def remove_empty_conditions(data)
   data
 end
 
-main
+if __FILE__ == $0
+  main
+end
