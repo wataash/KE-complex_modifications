@@ -1,0 +1,224 @@
+{
+    "title": "Personal rules (@wataash)",
+    "rules": [
+
+        {
+            "description": "left_control+hyphen, left_control+equal to ----------,========== (inspired by @tekezo)",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("hyphen", ["left_control"], ["caps_lock"]) %>,
+                    "to": [
+                        { "key_code": "hyphen" }, { "key_code": "hyphen" },
+                        { "key_code": "hyphen" }, { "key_code": "hyphen" },
+                        { "key_code": "hyphen" }, { "key_code": "hyphen" },
+                        { "key_code": "hyphen" }, { "key_code": "hyphen" },
+                        { "key_code": "hyphen" },
+                        {
+                            "key_code": "hyphen",
+                            "repeat": false
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("equal_sign", ["left_control"], ["caps_lock"]) %>,
+                    "to": <%= to([
+                        ["equal_sign"], ["equal_sign"], ["equal_sign"], ["equal_sign"], ["equal_sign"],
+                        ["equal_sign"], ["equal_sign"], ["equal_sign"], ["equal_sign"], ["equal_sign"],
+                        ["vk_none"],
+                    ]) %>
+                }
+            ]
+        },
+
+        {
+            "description": "Launch apps by [right_option]+letters.",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": <%= from("a", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open '/Applications/Atom.app'" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("b", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "---------- TODO ----------" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("c", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open '/Applications/Google Chrome.app'" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("d", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open ~/Desktop" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("e", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open '/Applications/Evernote.app'" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("f", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open ~" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("g", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "---------- TODO ----------" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("h", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open '/Applications/HipChat.app'" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("i", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open '/Applications/iTerm.app'" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("j", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "---------- TODO ----------" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("k", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open '/Applications/kdiff3.app'" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("l", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "---------- TODO ----------" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("m", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "---------- TODO ----------" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("n", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "---------- TODO ----------" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("o", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "---------- TODO ----------" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("p", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open '/Applications/System Preferences.app'" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("q", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "---------- TODO ----------" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("r", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "---------- TODO ----------" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("s", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open '/Applications/Sublime Text.app'" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("t", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open '/Applications/Thunderbird.app'" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("u", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "---------- TODO ----------" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("v", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open '/Applications/Visual Studio Code.app'" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("w", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "open '/Applications/Wireshark.app'" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("x", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "---------- TODO ----------" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("y", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "---------- TODO ----------" }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": <%= from("z", ["right_option"], ["caps_lock"]) %>,
+                    "to": [
+                        { "shell_command": "---------- TODO ----------" }
+                    ]
+                }
+            ]
+        }
+
+    ]
+}
