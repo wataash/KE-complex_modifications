@@ -205,6 +205,7 @@ def option_hyphen
         'key_code' => 'hyphen',
         'modifiers' => Karabiner.from_modifiers(['option'], ['caps_lock']),
       },
+      # to: 9.times.map { { key_code: 'hyphen' } }.append({ key_code: 'hyphen', repeat: false }),
       'to' => [
         { 'key_code' => 'hyphen' }, { 'key_code' => 'hyphen' },
         { 'key_code' => 'hyphen' }, { 'key_code' => 'hyphen' },
