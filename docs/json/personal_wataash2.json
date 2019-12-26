@@ -631,7 +631,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh return_or_enter"
+              "shell_command": "~/sh/key.sh return_or_enter"
             }
           ]
         },
@@ -650,7 +650,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh escape"
+              "shell_command": "~/sh/key.sh escape"
             }
           ]
         },
@@ -669,7 +669,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh delete_or_backspace"
+              "shell_command": "~/sh/key.sh delete_or_backspace"
             }
           ]
         },
@@ -688,7 +688,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh delete_forward"
+              "shell_command": "~/sh/key.sh delete_forward"
             }
           ]
         },
@@ -707,7 +707,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh tab"
+              "shell_command": "~/sh/key.sh tab"
             }
           ]
         },
@@ -726,7 +726,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh spacebar"
+              "shell_command": "~/sh/key.sh spacebar"
             }
           ]
         },
@@ -745,7 +745,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh hyphen"
+              "shell_command": "~/sh/key.sh hyphen"
             }
           ]
         },
@@ -764,7 +764,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh equal_sign"
+              "shell_command": "~/sh/key.sh equal_sign"
             }
           ]
         },
@@ -783,7 +783,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh open_bracket"
+              "shell_command": "~/sh/key.sh open_bracket"
             }
           ]
         },
@@ -802,7 +802,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh close_bracket"
+              "shell_command": "~/sh/key.sh close_bracket"
             }
           ]
         },
@@ -821,7 +821,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh backslash"
+              "shell_command": "~/sh/key.sh backslash"
             }
           ]
         },
@@ -840,7 +840,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh non_us_pound"
+              "shell_command": "~/sh/key.sh non_us_pound"
             }
           ]
         },
@@ -859,7 +859,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh semicolon"
+              "shell_command": "~/sh/key.sh semicolon"
             }
           ]
         },
@@ -878,7 +878,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh quote"
+              "shell_command": "~/sh/key.sh quote"
             }
           ]
         },
@@ -897,7 +897,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh grave_accent_and_tilde"
+              "shell_command": "~/sh/key.sh grave_accent_and_tilde"
             }
           ]
         },
@@ -916,7 +916,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh comma"
+              "shell_command": "~/sh/key.sh comma"
             }
           ]
         },
@@ -935,7 +935,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh period"
+              "shell_command": "~/sh/key.sh period"
             }
           ]
         },
@@ -954,7 +954,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh slash"
+              "shell_command": "~/sh/key.sh slash"
             }
           ]
         },
@@ -973,7 +973,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh non_us_backslash"
+              "shell_command": "~/sh/key.sh non_us_backslash"
             }
           ]
         },
@@ -992,7 +992,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh up_arrow"
+              "shell_command": "~/sh/key.sh up_arrow"
             }
           ]
         },
@@ -1011,7 +1011,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh down_arrow"
+              "shell_command": "~/sh/key.sh down_arrow"
             }
           ]
         },
@@ -1030,7 +1030,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh left_arrow"
+              "shell_command": "~/sh/key.sh left_arrow"
             }
           ]
         },
@@ -1049,7 +1049,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh right_arrow"
+              "shell_command": "~/sh/key.sh right_arrow"
             }
           ]
         },
@@ -1068,7 +1068,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh page_up"
+              "shell_command": "~/sh/key.sh page_up"
             }
           ]
         },
@@ -1087,7 +1087,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh page_down"
+              "shell_command": "~/sh/key.sh page_down"
             }
           ]
         },
@@ -1106,7 +1106,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh home"
+              "shell_command": "~/sh/key.sh home"
             }
           ]
         },
@@ -1125,7 +1125,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh end"
+              "shell_command": "~/sh/key.sh end"
             }
           ]
         },
@@ -1144,7 +1144,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh a"
+              "shell_command": "~/sh/key.sh a"
             }
           ]
         },
@@ -1163,7 +1163,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh b"
+              "shell_command": "~/sh/key.sh b"
             }
           ]
         },
@@ -1182,7 +1182,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh c"
+              "shell_command": "~/sh/key.sh c"
             }
           ]
         },
@@ -1201,7 +1201,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh d"
+              "shell_command": "~/sh/key.sh d"
             }
           ]
         },
@@ -1220,7 +1220,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh e"
+              "shell_command": "~/sh/key.sh e"
             }
           ]
         },
@@ -1239,7 +1239,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f"
+              "shell_command": "~/sh/key.sh f"
             }
           ]
         },
@@ -1258,7 +1258,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh g"
+              "shell_command": "~/sh/key.sh g"
             }
           ]
         },
@@ -1277,7 +1277,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh h"
+              "shell_command": "~/sh/key.sh h"
             }
           ]
         },
@@ -1296,7 +1296,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh i"
+              "shell_command": "~/sh/key.sh i"
             }
           ]
         },
@@ -1315,7 +1315,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh j"
+              "shell_command": "~/sh/key.sh j"
             }
           ]
         },
@@ -1334,7 +1334,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh k"
+              "shell_command": "~/sh/key.sh k"
             }
           ]
         },
@@ -1353,7 +1353,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh l"
+              "shell_command": "~/sh/key.sh l"
             }
           ]
         },
@@ -1372,7 +1372,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh m"
+              "shell_command": "~/sh/key.sh m"
             }
           ]
         },
@@ -1391,7 +1391,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh n"
+              "shell_command": "~/sh/key.sh n"
             }
           ]
         },
@@ -1410,7 +1410,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh o"
+              "shell_command": "~/sh/key.sh o"
             }
           ]
         },
@@ -1429,7 +1429,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh p"
+              "shell_command": "~/sh/key.sh p"
             }
           ]
         },
@@ -1448,7 +1448,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh q"
+              "shell_command": "~/sh/key.sh q"
             }
           ]
         },
@@ -1467,7 +1467,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh r"
+              "shell_command": "~/sh/key.sh r"
             }
           ]
         },
@@ -1486,7 +1486,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh s"
+              "shell_command": "~/sh/key.sh s"
             }
           ]
         },
@@ -1505,7 +1505,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh t"
+              "shell_command": "~/sh/key.sh t"
             }
           ]
         },
@@ -1524,7 +1524,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh u"
+              "shell_command": "~/sh/key.sh u"
             }
           ]
         },
@@ -1543,7 +1543,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh v"
+              "shell_command": "~/sh/key.sh v"
             }
           ]
         },
@@ -1562,7 +1562,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh w"
+              "shell_command": "~/sh/key.sh w"
             }
           ]
         },
@@ -1581,7 +1581,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh x"
+              "shell_command": "~/sh/key.sh x"
             }
           ]
         },
@@ -1600,7 +1600,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh y"
+              "shell_command": "~/sh/key.sh y"
             }
           ]
         },
@@ -1619,7 +1619,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh z"
+              "shell_command": "~/sh/key.sh z"
             }
           ]
         },
@@ -1638,7 +1638,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh 0"
+              "shell_command": "~/sh/key.sh 0"
             }
           ]
         },
@@ -1657,7 +1657,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh 1"
+              "shell_command": "~/sh/key.sh 1"
             }
           ]
         },
@@ -1676,7 +1676,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh 2"
+              "shell_command": "~/sh/key.sh 2"
             }
           ]
         },
@@ -1695,7 +1695,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh 3"
+              "shell_command": "~/sh/key.sh 3"
             }
           ]
         },
@@ -1714,7 +1714,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh 4"
+              "shell_command": "~/sh/key.sh 4"
             }
           ]
         },
@@ -1733,7 +1733,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh 5"
+              "shell_command": "~/sh/key.sh 5"
             }
           ]
         },
@@ -1752,7 +1752,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh 6"
+              "shell_command": "~/sh/key.sh 6"
             }
           ]
         },
@@ -1771,7 +1771,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh 7"
+              "shell_command": "~/sh/key.sh 7"
             }
           ]
         },
@@ -1790,7 +1790,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh 8"
+              "shell_command": "~/sh/key.sh 8"
             }
           ]
         },
@@ -1809,7 +1809,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh 9"
+              "shell_command": "~/sh/key.sh 9"
             }
           ]
         },
@@ -1828,7 +1828,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f1"
+              "shell_command": "~/sh/key.sh f1"
             }
           ]
         },
@@ -1847,7 +1847,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f2"
+              "shell_command": "~/sh/key.sh f2"
             }
           ]
         },
@@ -1866,7 +1866,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f3"
+              "shell_command": "~/sh/key.sh f3"
             }
           ]
         },
@@ -1885,7 +1885,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f4"
+              "shell_command": "~/sh/key.sh f4"
             }
           ]
         },
@@ -1904,7 +1904,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f5"
+              "shell_command": "~/sh/key.sh f5"
             }
           ]
         },
@@ -1923,7 +1923,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f6"
+              "shell_command": "~/sh/key.sh f6"
             }
           ]
         },
@@ -1942,7 +1942,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f7"
+              "shell_command": "~/sh/key.sh f7"
             }
           ]
         },
@@ -1961,7 +1961,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f8"
+              "shell_command": "~/sh/key.sh f8"
             }
           ]
         },
@@ -1980,7 +1980,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f9"
+              "shell_command": "~/sh/key.sh f9"
             }
           ]
         },
@@ -1999,7 +1999,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f10"
+              "shell_command": "~/sh/key.sh f10"
             }
           ]
         },
@@ -2018,7 +2018,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f11"
+              "shell_command": "~/sh/key.sh f11"
             }
           ]
         },
@@ -2037,7 +2037,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f12"
+              "shell_command": "~/sh/key.sh f12"
             }
           ]
         },
@@ -2056,7 +2056,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f13"
+              "shell_command": "~/sh/key.sh f13"
             }
           ]
         },
@@ -2075,7 +2075,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f14"
+              "shell_command": "~/sh/key.sh f14"
             }
           ]
         },
@@ -2094,7 +2094,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f15"
+              "shell_command": "~/sh/key.sh f15"
             }
           ]
         },
@@ -2113,7 +2113,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f16"
+              "shell_command": "~/sh/key.sh f16"
             }
           ]
         },
@@ -2132,7 +2132,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f17"
+              "shell_command": "~/sh/key.sh f17"
             }
           ]
         },
@@ -2151,7 +2151,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f18"
+              "shell_command": "~/sh/key.sh f18"
             }
           ]
         },
@@ -2170,7 +2170,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f19"
+              "shell_command": "~/sh/key.sh f19"
             }
           ]
         },
@@ -2189,7 +2189,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f20"
+              "shell_command": "~/sh/key.sh f20"
             }
           ]
         },
@@ -2208,7 +2208,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f21"
+              "shell_command": "~/sh/key.sh f21"
             }
           ]
         },
@@ -2227,7 +2227,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f22"
+              "shell_command": "~/sh/key.sh f22"
             }
           ]
         },
@@ -2246,7 +2246,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f23"
+              "shell_command": "~/sh/key.sh f23"
             }
           ]
         },
@@ -2265,7 +2265,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh f24"
+              "shell_command": "~/sh/key.sh f24"
             }
           ]
         },
@@ -2285,7 +2285,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+return_or_enter"
+              "shell_command": "~/sh/key.sh shift+return_or_enter"
             }
           ]
         },
@@ -2305,7 +2305,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+escape"
+              "shell_command": "~/sh/key.sh shift+escape"
             }
           ]
         },
@@ -2325,7 +2325,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+delete_or_backspace"
+              "shell_command": "~/sh/key.sh shift+delete_or_backspace"
             }
           ]
         },
@@ -2345,7 +2345,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+delete_forward"
+              "shell_command": "~/sh/key.sh shift+delete_forward"
             }
           ]
         },
@@ -2365,7 +2365,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+tab"
+              "shell_command": "~/sh/key.sh shift+tab"
             }
           ]
         },
@@ -2385,7 +2385,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+spacebar"
+              "shell_command": "~/sh/key.sh shift+spacebar"
             }
           ]
         },
@@ -2405,7 +2405,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+hyphen"
+              "shell_command": "~/sh/key.sh shift+hyphen"
             }
           ]
         },
@@ -2425,7 +2425,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+equal_sign"
+              "shell_command": "~/sh/key.sh shift+equal_sign"
             }
           ]
         },
@@ -2445,7 +2445,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+open_bracket"
+              "shell_command": "~/sh/key.sh shift+open_bracket"
             }
           ]
         },
@@ -2465,7 +2465,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+close_bracket"
+              "shell_command": "~/sh/key.sh shift+close_bracket"
             }
           ]
         },
@@ -2485,7 +2485,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+backslash"
+              "shell_command": "~/sh/key.sh shift+backslash"
             }
           ]
         },
@@ -2505,7 +2505,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+non_us_pound"
+              "shell_command": "~/sh/key.sh shift+non_us_pound"
             }
           ]
         },
@@ -2525,7 +2525,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+semicolon"
+              "shell_command": "~/sh/key.sh shift+semicolon"
             }
           ]
         },
@@ -2545,7 +2545,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+quote"
+              "shell_command": "~/sh/key.sh shift+quote"
             }
           ]
         },
@@ -2565,7 +2565,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+grave_accent_and_tile"
+              "shell_command": "~/sh/key.sh shift+grave_accent_and_tile"
             }
           ]
         },
@@ -2585,7 +2585,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+comma"
+              "shell_command": "~/sh/key.sh shift+comma"
             }
           ]
         },
@@ -2605,7 +2605,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+period"
+              "shell_command": "~/sh/key.sh shift+period"
             }
           ]
         },
@@ -2625,7 +2625,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+slash"
+              "shell_command": "~/sh/key.sh shift+slash"
             }
           ]
         },
@@ -2645,7 +2645,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+non_us_backslash"
+              "shell_command": "~/sh/key.sh shift+non_us_backslash"
             }
           ]
         },
@@ -2665,7 +2665,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+up_arrow"
+              "shell_command": "~/sh/key.sh shift+up_arrow"
             }
           ]
         },
@@ -2685,7 +2685,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+down_arrow"
+              "shell_command": "~/sh/key.sh shift+down_arrow"
             }
           ]
         },
@@ -2705,7 +2705,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+left_arrow"
+              "shell_command": "~/sh/key.sh shift+left_arrow"
             }
           ]
         },
@@ -2725,7 +2725,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+right_arrow"
+              "shell_command": "~/sh/key.sh shift+right_arrow"
             }
           ]
         },
@@ -2745,7 +2745,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+page_up"
+              "shell_command": "~/sh/key.sh shift+page_up"
             }
           ]
         },
@@ -2765,7 +2765,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+page_down"
+              "shell_command": "~/sh/key.sh shift+page_down"
             }
           ]
         },
@@ -2785,7 +2785,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+home"
+              "shell_command": "~/sh/key.sh shift+home"
             }
           ]
         },
@@ -2805,7 +2805,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+end"
+              "shell_command": "~/sh/key.sh shift+end"
             }
           ]
         },
@@ -2825,7 +2825,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+a"
+              "shell_command": "~/sh/key.sh shift+a"
             }
           ]
         },
@@ -2845,7 +2845,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+b"
+              "shell_command": "~/sh/key.sh shift+b"
             }
           ]
         },
@@ -2865,7 +2865,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+c"
+              "shell_command": "~/sh/key.sh shift+c"
             }
           ]
         },
@@ -2885,7 +2885,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+d"
+              "shell_command": "~/sh/key.sh shift+d"
             }
           ]
         },
@@ -2905,7 +2905,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+e"
+              "shell_command": "~/sh/key.sh shift+e"
             }
           ]
         },
@@ -2925,7 +2925,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f"
+              "shell_command": "~/sh/key.sh shift+f"
             }
           ]
         },
@@ -2945,7 +2945,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+g"
+              "shell_command": "~/sh/key.sh shift+g"
             }
           ]
         },
@@ -2965,7 +2965,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+h"
+              "shell_command": "~/sh/key.sh shift+h"
             }
           ]
         },
@@ -2985,7 +2985,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+i"
+              "shell_command": "~/sh/key.sh shift+i"
             }
           ]
         },
@@ -3005,7 +3005,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+j"
+              "shell_command": "~/sh/key.sh shift+j"
             }
           ]
         },
@@ -3025,7 +3025,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+k"
+              "shell_command": "~/sh/key.sh shift+k"
             }
           ]
         },
@@ -3045,7 +3045,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+l"
+              "shell_command": "~/sh/key.sh shift+l"
             }
           ]
         },
@@ -3065,7 +3065,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+m"
+              "shell_command": "~/sh/key.sh shift+m"
             }
           ]
         },
@@ -3085,7 +3085,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+n"
+              "shell_command": "~/sh/key.sh shift+n"
             }
           ]
         },
@@ -3105,7 +3105,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+o"
+              "shell_command": "~/sh/key.sh shift+o"
             }
           ]
         },
@@ -3125,7 +3125,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+p"
+              "shell_command": "~/sh/key.sh shift+p"
             }
           ]
         },
@@ -3145,7 +3145,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+q"
+              "shell_command": "~/sh/key.sh shift+q"
             }
           ]
         },
@@ -3165,7 +3165,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+r"
+              "shell_command": "~/sh/key.sh shift+r"
             }
           ]
         },
@@ -3185,7 +3185,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+s"
+              "shell_command": "~/sh/key.sh shift+s"
             }
           ]
         },
@@ -3205,7 +3205,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+t"
+              "shell_command": "~/sh/key.sh shift+t"
             }
           ]
         },
@@ -3225,7 +3225,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+u"
+              "shell_command": "~/sh/key.sh shift+u"
             }
           ]
         },
@@ -3245,7 +3245,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+v"
+              "shell_command": "~/sh/key.sh shift+v"
             }
           ]
         },
@@ -3265,7 +3265,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+w"
+              "shell_command": "~/sh/key.sh shift+w"
             }
           ]
         },
@@ -3285,7 +3285,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+x"
+              "shell_command": "~/sh/key.sh shift+x"
             }
           ]
         },
@@ -3305,7 +3305,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+y"
+              "shell_command": "~/sh/key.sh shift+y"
             }
           ]
         },
@@ -3325,7 +3325,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+z"
+              "shell_command": "~/sh/key.sh shift+z"
             }
           ]
         },
@@ -3345,7 +3345,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+0"
+              "shell_command": "~/sh/key.sh shift+0"
             }
           ]
         },
@@ -3365,7 +3365,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+1"
+              "shell_command": "~/sh/key.sh shift+1"
             }
           ]
         },
@@ -3385,7 +3385,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+2"
+              "shell_command": "~/sh/key.sh shift+2"
             }
           ]
         },
@@ -3405,7 +3405,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+3"
+              "shell_command": "~/sh/key.sh shift+3"
             }
           ]
         },
@@ -3425,7 +3425,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+4"
+              "shell_command": "~/sh/key.sh shift+4"
             }
           ]
         },
@@ -3445,7 +3445,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+5"
+              "shell_command": "~/sh/key.sh shift+5"
             }
           ]
         },
@@ -3465,7 +3465,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+6"
+              "shell_command": "~/sh/key.sh shift+6"
             }
           ]
         },
@@ -3485,7 +3485,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+7"
+              "shell_command": "~/sh/key.sh shift+7"
             }
           ]
         },
@@ -3505,7 +3505,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+8"
+              "shell_command": "~/sh/key.sh shift+8"
             }
           ]
         },
@@ -3525,7 +3525,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+9"
+              "shell_command": "~/sh/key.sh shift+9"
             }
           ]
         },
@@ -3545,7 +3545,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f1"
+              "shell_command": "~/sh/key.sh shift+f1"
             }
           ]
         },
@@ -3565,7 +3565,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f2"
+              "shell_command": "~/sh/key.sh shift+f2"
             }
           ]
         },
@@ -3585,7 +3585,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f3"
+              "shell_command": "~/sh/key.sh shift+f3"
             }
           ]
         },
@@ -3605,7 +3605,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f4"
+              "shell_command": "~/sh/key.sh shift+f4"
             }
           ]
         },
@@ -3625,7 +3625,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f5"
+              "shell_command": "~/sh/key.sh shift+f5"
             }
           ]
         },
@@ -3645,7 +3645,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f6"
+              "shell_command": "~/sh/key.sh shift+f6"
             }
           ]
         },
@@ -3665,7 +3665,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f7"
+              "shell_command": "~/sh/key.sh shift+f7"
             }
           ]
         },
@@ -3685,7 +3685,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f8"
+              "shell_command": "~/sh/key.sh shift+f8"
             }
           ]
         },
@@ -3705,7 +3705,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f9"
+              "shell_command": "~/sh/key.sh shift+f9"
             }
           ]
         },
@@ -3725,7 +3725,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f10"
+              "shell_command": "~/sh/key.sh shift+f10"
             }
           ]
         },
@@ -3745,7 +3745,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f11"
+              "shell_command": "~/sh/key.sh shift+f11"
             }
           ]
         },
@@ -3765,7 +3765,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f12"
+              "shell_command": "~/sh/key.sh shift+f12"
             }
           ]
         },
@@ -3785,7 +3785,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f13"
+              "shell_command": "~/sh/key.sh shift+f13"
             }
           ]
         },
@@ -3805,7 +3805,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f14"
+              "shell_command": "~/sh/key.sh shift+f14"
             }
           ]
         },
@@ -3825,7 +3825,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f15"
+              "shell_command": "~/sh/key.sh shift+f15"
             }
           ]
         },
@@ -3845,7 +3845,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f16"
+              "shell_command": "~/sh/key.sh shift+f16"
             }
           ]
         },
@@ -3865,7 +3865,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f17"
+              "shell_command": "~/sh/key.sh shift+f17"
             }
           ]
         },
@@ -3885,7 +3885,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f18"
+              "shell_command": "~/sh/key.sh shift+f18"
             }
           ]
         },
@@ -3905,7 +3905,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f19"
+              "shell_command": "~/sh/key.sh shift+f19"
             }
           ]
         },
@@ -3925,7 +3925,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f20"
+              "shell_command": "~/sh/key.sh shift+f20"
             }
           ]
         },
@@ -3945,7 +3945,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f21"
+              "shell_command": "~/sh/key.sh shift+f21"
             }
           ]
         },
@@ -3965,7 +3965,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f22"
+              "shell_command": "~/sh/key.sh shift+f22"
             }
           ]
         },
@@ -3985,7 +3985,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f23"
+              "shell_command": "~/sh/key.sh shift+f23"
             }
           ]
         },
@@ -4005,7 +4005,7 @@
           },
           "to": [
             {
-              "shell_command": "~/usr/bin/key.sh shift+f24"
+              "shell_command": "~/sh/key.sh shift+f24"
             }
           ]
         },
